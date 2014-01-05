@@ -1,13 +1,13 @@
 {
     "name": "dateing-with-node",
+    "description": "A RESTful dating service written in Javascript from back to front",
     "version": "0.0.1",
     "private": true,
-    "scripts": {
-        "start": "node app.js"
-    },
+    "repository"  : "http://github.com/dresende/node-orm2.git",
     "dependencies": {
         "express": "3.4.7",
-	"mysql":"*"
+	    "mysql":"*",
+        "colors": "0.6.2"
     }
 }
 
