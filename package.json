@@ -1,13 +1,18 @@
 {
-    "name": "dateing-with-node",
-    "description": "A RESTful dating service written in Javascript from back to front",
-    "version": "0.0.1",
-    "private": true,
-    "repository"  : "http://github.com/dresende/node-orm2.git",
-    "dependencies": {
-        "express": "3.4.7",
-	    "mysql":"*",
-        "colors": "0.6.2"
-    }
+  "name": "dateing-with-node",
+  "description": "A RESTful dating service written in Javascript from back to front",
+  "version": "0.0.1",
+  "private": true,
+  "repository": "https://github.com/salimkapadia/dating-with-node.git",
+  "scripts": {
+    "start": "node_modules\\.bin\\nodemon server.js"
+  },
+  "dependencies": {
+    "express": "3.4.7",
+    "mysql": "*",
+    "colors": "0.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "~1.0.5"
+  }
 }
-
