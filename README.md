@@ -70,7 +70,7 @@ nodemon --legacy-watch server.js
 
 
 * With `npm start` implementation, `scripts/start` is **deprecated**
-* It would be a good idea to make several configuration files for test and prod environments, see [this](http://dailyjs.com/2014/01/02/recipe-for-express-configuration/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+dailyjs+%28DailyJS%29) and [this](http://www.jorisooms.be/testing-your-node-api-with-supertest/) but it is probable that Hapi framework already contemplate it.
+* It would be a good idea to make several configuration files for test and prod environments, see [this](http://dailyjs.com/2014/01/02/recipe-for-express-configuration/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+dailyjs+%28DailyJS%29) and [this](http://www.jorisooms.be/testing-your-node-api-with-supertest/), but it is probable that Hapi framework already contemplates it.
 _NOTE:_ simply the config files
 
 
