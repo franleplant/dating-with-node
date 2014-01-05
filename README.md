@@ -17,27 +17,64 @@ Dependencies
   - [NodeJS](http://nodejs.org/)
   - [Npm](https://github.com/isaacs/npm/)
 
-Dependency Installation
+
+_NOTE:_ Nodejs already comes with NPM
+
+Getting Started
 =========
 Make sure you’re running a mysql instance if you plan on running this app locally.
+Remember to edit `app/config/settings.js` to set your database, user & password.
+
+Download the repo and get inside it
+
 
 ```bash
 git clone https://github.com/salimkapadia/dating-with-node.git
 cd dating-with-node
-npm install
-node server.js
 ```
 
-Local Development
-=========
-To make development easier use [Nodemon](https://github.com/remy/nodemon/). You may need to add the executable to your
-bash profile. Also, edit `app/config/settings.js` to set your database, user & password.
+
+Install project dependencies
+
 ```bash
-git clone https://github.com/salimkapadia/dating-with-node.git
-cd dating-with-node
 npm install
-./script/start
 ```
+
+Run the project and reload the project when a source file changes. We use [Nodemon](https://github.com/remy/nodemon) internally.
+
+```bash
+npm start
+```
+
+
+**Windows Users:** 
+
+As usually windows has problems with detecting changes in files.
+
+This is equivalent to ```npm start``` but working on Windows:
+
+```bash
+node_modules\.bin\nodemon --legacy-watch server.js
+```
+
+Or, less verbose:
+
+```bash
+npm install -g nodemon
+nodemon --legacy-watch server.js
+```
+
+
+
+**NOTES:**
+
+
+* With ``` npm start ``` implementation, ``` scripts/start ``` is **deprecated
+* It would be a good idea to make several configuration files for test and prod environments, see [this](http://dailyjs.com/2014/01/02/recipe-for-express-configuration/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+dailyjs+%28DailyJS%29) and [this](http://www.jorisooms.be/testing-your-node-api-with-supertest/) but it is probable that Hapi framework already contemplate it.
+_NOTE:_ simply the config files
+
+
+
 
 
 License
