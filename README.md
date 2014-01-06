@@ -15,8 +15,6 @@ The frontend will use the following technologies:
 Dependencies
 =========
   - [NodeJS](http://nodejs.org/)
-  - [Npm](https://github.com/isaacs/npm/)
-
 
 _NOTE:_ Nodejs already comes with NPM
 
@@ -40,7 +38,9 @@ Install project dependencies
 npm install
 ```
 
-Run the project and reload the project when a source file changes. We use [Nodemon](https://github.com/remy/nodemon) internally.
+Run the project and reload the project when a source file changes. We use  internally.
+
+Run the project and restart node server when changes are made to source files. This feature uses [Nodemon](https://github.com/remy/nodemon).
 
 ```bash
 npm start
